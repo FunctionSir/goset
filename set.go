@@ -2,7 +2,7 @@
  * @Author: FunctionSir
  * @License: AGPLv3
  * @Date: 2025-04-20 19:01:41
- * @LastEditTime: 2025-04-20 21:48:19
+ * @LastEditTime: 2025-04-22 16:09:13
  * @LastEditors: FunctionSir
  * @Description: -
  * @FilePath: /goset/set.go
@@ -11,6 +11,8 @@
 package goset
 
 type Void struct{}
+
+// This is NOT a ordered set!
 type Set[Key comparable] map[Key]Void
 
 // Check existence of a key.
